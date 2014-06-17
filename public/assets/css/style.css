@@ -85,7 +85,9 @@ header #logout{
 	position: absolute;
 	top: 35px;
 	left: 90px;
+	cursor: pointer;	
 }
+
 
 
 nav {
@@ -94,8 +96,8 @@ nav {
 	padding: 0;
 	text-align: center;
 	background: #333;
-	border-bottom: 2px solid skyblue;
-	border-top: 2px solid skyblue;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
 }
 
 nav ul{
@@ -124,22 +126,57 @@ nav li {
 	transition: all 0.3s ease;
 }
 
+
+
+
 nav li:hover .dropdown {
 	height: 50px;
 	line-height: 50px;
-	border-bottom: 2px solid skyblue;
-	border-left:   2px solid skyblue;
-	border-right:  2px solid skyblue;
+	border-bottom: 2px solid white;
+	
 
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+	-webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
 }
 
 nav li:hover .dropdown:first-child {
-	border-top: 2px solid skyblue;
+	border-top: 2px solid white;
+
+}
+
+.dropdown1{
+	overflow: hidden;
+	height: 0;
+	border: 0 solid red;
+
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-ms-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+
+
+
+nav li:hover .dropdown1 {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 2px solid white;
+	
+
+	-webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+nav li:hover .dropdown1:first-child {
+	border-top: 2px solid white;
 
 }
 
@@ -239,3 +276,21 @@ label{
 	display: inline-block;
 	width: 85px;
 }
+
+.background{
+	width: 100%;
+	height: 1048px;
+	background-color: black;
+}
+
+.HomeLogo{
+	width: 35%;
+	margin-top:5em; 
+	margin-left: 32%;
+
+
+}
+
+
+
+
