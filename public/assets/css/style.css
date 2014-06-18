@@ -111,6 +111,12 @@ nav li {
 	height:50px;
 	line-height: 40px;
 	cursor: pointer;
+
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
 }
 
 
@@ -126,7 +132,15 @@ nav li {
 	transition: all 0.3s ease;
 }
 
+nav li:hover{
+	background: #444;
 
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
 
 
 nav li:hover .dropdown {
@@ -151,6 +165,8 @@ nav li:hover .dropdown:first-child {
 	overflow: hidden;
 	height: 0;
 	border: 0 solid red;
+	border-left: 0 solid skyblue;
+	border-right: 0 solid red;
 
 	-webkit-transition: all 0.1s ease;
 	-moz-transition: all 0.1s ease;
@@ -186,10 +202,30 @@ nav li ul{
 }
 
 nav li ul li {
-	background: #333;
-	width:100%;
+	background: #444;
+	width: 147px;
 	display:block;
 	left: 0;
+	border: 0 solid #333;
+	position: relative;
+
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-ms-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+nav li ul li:hover:after{
+	content: '';
+	height: 6px;
+	width: 6px;
+	border-radius: 50%;
+	background: skyblue;
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 5px;
 }
 
 nav li ul li a{

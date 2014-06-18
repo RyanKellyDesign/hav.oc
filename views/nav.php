@@ -27,7 +27,6 @@
 					<li class="dropdown1"><a href="#">Pistols</a></li>
 					<li class="dropdown"><a href="#">Rifles</a></li>
 					<li class="dropdown1"><a href="#">Rocket Launchers</a></li>
-					<li class="dropdown"><a href="#">Shotguns</a></li>	
 					
 				</ul>
 			</li>
