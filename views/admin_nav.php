@@ -1,7 +1,14 @@
 <?php $categories = new Category_collection(); ?>
+<script>
+	window.onload = function () {
+		var count = <?=count($categories->items) + 1?>;
+		var navThings = document.getElementsByClassName('dropdown')[0];
 
+		document.getElementById('navThings').style.minWidth = document.getElementById('navThings').offsetWidth + 1 + 'px';
+	}
+</script>
 <nav class="over">
-	<div class="navthings">
+	<div id='navThings' class="navthings">
 	
 		<ul>
 			<?php foreach($categories->items as $nav_category): ?>

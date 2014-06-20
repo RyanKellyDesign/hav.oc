@@ -311,7 +311,7 @@ label{
 	padding-left: 100px;
 }
 
-.navthings:after{
+.navDropdown{
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
@@ -336,10 +336,15 @@ label{
 	padding-right: 3px;
 }
 
+.currentImage{
+	height: 150px;
+
+}
+
 @media all and (max-width: 960px) {
 	
 
-	.navthings:after{
+	.navDropdown{
 		display: inline-block;
 	}
 
@@ -348,4 +353,4 @@ label{
 
 
 
-	}
+}
