@@ -102,15 +102,19 @@ nav {
 
 nav ul{
 	margin: 0;
+	text-align: center;
+	vertical-align: top;
+	padding: 0;
 }
 
 nav li {
-	float:left;
-	width:16%;
+	display: inline-block;
+	width: 147px;
 	color: white;
 	height:50px;
-	line-height: 40px;
+	line-height: 30px;
 	cursor: pointer;
+	position: relative;
 
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
@@ -142,6 +146,9 @@ nav li:hover{
 	transition: all 0.4s ease;
 }
 
+nav li:hover .dropdown:first-child{
+	border-top: 2px solid white;
+}
 
 nav li:hover .dropdown {
 	height: 50px;
@@ -149,56 +156,18 @@ nav li:hover .dropdown {
 	border-bottom: 2px solid white;
 	
 
-	-webkit-transition: all 0.7s ease;
-	-moz-transition: all 0.7s ease;
-	-ms-transition: all 0.7s ease;
-	-o-transition: all 0.7s ease;
-	transition: all 0.7s ease;
-}
-
-nav li:hover .dropdown:first-child {
-	border-top: 2px solid white;
-
-}
-
-.dropdown1{
-	overflow: hidden;
-	height: 0;
-	border: 0 solid red;
-	border-left: 0 solid skyblue;
-	border-right: 0 solid red;
-
-	-webkit-transition: all 0.1s ease;
-	-moz-transition: all 0.1s ease;
-	-ms-transition: all 0.1s ease;
-	-o-transition: all 0.1s ease;
-	transition: all 0.1s ease;
-}
-
-
-
-
-nav li:hover .dropdown1 {
-	height: 50px;
-	line-height: 50px;
-	border-bottom: 2px solid white;
-	
-
-	-webkit-transition: all 0.7s ease;
-	-moz-transition: all 0.7s ease;
-	-ms-transition: all 0.7s ease;
-	-o-transition: all 0.7s ease;
-	transition: all 0.7s ease;
-}
-
-nav li:hover .dropdown1:first-child {
-	border-top: 2px solid white;
-
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
 }
 
 nav li ul{
-	position: relative;
+	position: absolute;
 	padding: 0;
+	top: 100%;
+	left: 0;
 }
 
 nav li ul li {
@@ -231,44 +200,6 @@ nav li ul li:hover:after{
 nav li ul li a{
 	text-decoration: none;
 	color: white;
-}
-
-.navsub{
-	margin-bottom: 3px;
-	display: block;
-	background: #000;
-	color: white;
-	padding-left: 10px;
-	height: 30px;
-	line-height: 28px;
-	margin-top: 3px;
-}
-
-.navitems{	
-	padding-left: 0px;
-}
-
-.navitems a{
-	display: block;
-	background: #ddd;
-	margin-bottom: 2px;
-	width: 200px;
-	padding-left: 40px;
-	height: 33px;
-	line-height: 33px;
-	cursor: pointer;
-	border-right: 0px solid black;
-
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-}
-
-.navitems a:hover{
-	background: #eee;
-	border-right: 4px solid black;
 }
 
 .blackRoundedButton, input[type=submit]{
@@ -346,4 +277,34 @@ label{
 	display: inline-block;
 
 	-webkit-animation: blink 0.2s infinite;
+}
+
+.noDecor{
+	text-decoration: none;
+}
+
+.navHead{
+	float:left;
+	width: 147px;
+	color: white;
+	height:50px;
+	line-height: 50px;
+	cursor: pointer;
+
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.over{
+	position: relative;
+	z-index: 2;
+}
+
+.navthings{
+	height: 50px;
+	width: 100%;
+	margin: 0 auto;
 }
