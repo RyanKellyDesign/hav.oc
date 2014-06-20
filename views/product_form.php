@@ -9,9 +9,21 @@
 		</div>
 
 		<div class="row">
-			<?=$form->
+			<?=$form->label('productImage','Image:')?>
+			<?=$form->max_file_size()?>
+			<?=$form->file()?>
+		</div>
+
+		<div class="row">
+			<?=$form->label('description', 'Description:')?>
+			<?=$form->textarea('description')?>
 		</div>
 		
+		<div class="row">
+			<?=$form->label('price','Price:')?>
+			<div class="inline">$</div><?=$form->number('price','1','min="1"')?>
+		</div>
+
 		<div class="row">
 			<?=$form->submit()?>
 				<?php

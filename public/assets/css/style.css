@@ -307,4 +307,45 @@ label{
 	height: 50px;
 	width: 100%;
 	margin: 0 auto;
+	padding-right: 100px;
+	padding-left: 100px;
 }
+
+.navthings:after{
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+	content: '';
+	height: 8px;
+	width: 8px;
+	position: absolute;
+	top: -webkit-calc(50% - 6px);
+	top: calc(50% - 6px);
+	right: 50px;
+	display: none;
+	cursor: pointer;
+}
+
+.inline{
+	display: inline-block;
+	padding-right: 3px;
+}
+
+@media all and (max-width: 960px) {
+	
+
+	.navthings:after{
+		display: inline-block;
+	}
+
+
+
+
+
+
+	}
