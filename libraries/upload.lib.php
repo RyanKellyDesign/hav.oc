@@ -28,6 +28,7 @@
 
 class Upload{
 
+	public static $optional = false;
 
 
 	/*
@@ -103,7 +104,12 @@ class Upload{
 			return self::error('The file you are attempting to upload is incomplete');
 
 		}else if($error == 4){
-			return self::error('No file was uploaded');
+			if(self::$optional){
+				return false;
+			}else{
+				return self::error('No file was uploaded');
+			}
+			
 
 		}else{
 			return self::error('Unknown error');

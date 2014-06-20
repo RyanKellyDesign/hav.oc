@@ -9,6 +9,7 @@ require_once '../libraries/model.lib.php';
 require_once '../libraries/upload.lib.php';
 
 Login::kickout();
+Upload::$optional = true;
 
 
 
@@ -29,12 +30,12 @@ if($_POST){
 		foreach($upload_result as $file){
 			if($file['error_message']){
 				echo '<p class="error">'.$file['error_message'].'</p>';
-			}else {
+			}else if($file['filepath']) {
 				$product->image = $file['filepath'];	
-			}
-			
 		}
+			
 	}
+}
 
 	$product->category_id = $_GET['category_id'];
 	$product->save();

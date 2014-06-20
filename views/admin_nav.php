@@ -18,7 +18,7 @@
 					<?php $products = new Product_collection($nav_category['id']); ?>
 					<ul>
 						<?php foreach($products->items as $nav_product): ?>
-							<li class="dropdown"><a href="edit_product.php?category_id=<?=$nav_category['id']?>&id=<?=$nav_product['id']?>"><?=$nav_product['name']?></a></li>
+							<li class="dropdown"><a href="edit_product.php?id=<?=$nav_product['id']?>"><?=$nav_product['name']?></a></li>
 						<?php endforeach; ?>
 
 						<li class="dropdown"><a href="create_product.php?category_id=<?=$nav_category['id']?>" class="bold">New product</a></li>

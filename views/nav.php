@@ -10,7 +10,7 @@
 					<?php $products = new Product_collection($nav_category['id']); ?>
 					<ul>
 						<?php foreach($products->items as $nav_product): ?>
-							<li class="dropdown"><a href="product.php?category_id=<?=$nav_category['id']?>&id=<?=$nav_product['id']?>"><?=$nav_product['name']?></a></li>
+							<li class="dropdown"><a href="<?=$nav_category['name']?>.php?category_id=<?=$nav_category['id']?>&id=<?=$nav_product['id']?>"><?=$nav_product['name']?></a></li>
 						<?php endforeach; ?>
 
 					</ul>

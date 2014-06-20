@@ -15,6 +15,7 @@
 		#introVid{
 			display: inherit;
 			margin-top: -70px;
+			height: 100%;
 		}
 
 		body {
