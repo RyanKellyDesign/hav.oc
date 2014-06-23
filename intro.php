@@ -114,7 +114,7 @@
 			if (e.which == 89) {
 				//document.getElementById('entryTextBox').innerHTML = '';
 				document.querySelector('.blinker').className = 'nonBlinker';
-				typeText(document.querySelector('.blahtext'), 'Then fuck off . . .', function(){
+				typeText(document.querySelector('.blahtext'), 'Goodbye . . .', function(){
 					window.setInterval(function () {
 						location.href = 'http://www.google.com';
 					}, 3000);
