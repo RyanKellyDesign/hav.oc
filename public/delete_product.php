@@ -7,7 +7,8 @@ require_once '../libraries/model.lib.php';
 Login::kickout();
 
 if($_GET['id']){
-	$product = new Model($_GET['id']);
+	$product = new Model("tb_products");
+	$product->load($_GET['id']);
 	$product->delete();
 }
 

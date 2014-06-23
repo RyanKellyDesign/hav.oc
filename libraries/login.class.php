@@ -9,7 +9,8 @@ class Login{
 	}
 
 	public function log_out(){
-		$_SESSION['logged_in'] = false;
+		unset($_SESSION['logged_in']);
+		unset($_SESSION['admin']);
 	}
 
 	public function kickout(){
@@ -22,4 +23,6 @@ class Login{
 	public function is_logged_in(){
 		return $_SESSION['logged_in'];
 	}
+
+
 }

@@ -35,10 +35,16 @@ if($_POST){
 		}
 			
 	}
-}
 
 	$product->category_id = $_GET['category_id'];
 	$product->save();
+
+
+
+
+	header("location: edit_product.php?id=".$product->id);
+	exit;
+}
 
 
 include '../views/admin_header.php';

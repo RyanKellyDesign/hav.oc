@@ -6,10 +6,10 @@ require_once('../libraries/config.class.php');
 require_once('../libraries/hash.class.php');
 
 
-class User extends Model {
+class Admin extends Model {
 
 	public function __construct(){
-		parent::__construct('tb_customers');
+		parent::__construct('tb_admins');
 	}
 
 	public function authenticate(){

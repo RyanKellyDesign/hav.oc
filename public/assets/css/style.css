@@ -12,6 +12,7 @@ html {font-family: sans-serif;-ms-text-size-adjust: 100%;-webkit-text-size-adjus
 body{
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	color: #333;
+	background: black;
 
 }
 
@@ -54,9 +55,12 @@ header .adminbutton{
 	background: #333;
 	height: 30px;
 	line-height: 20px;
-	padding: 5px 10px;
+	padding: 5px;
 	border-radius: 5px;
 	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	font-size: 0.9em;
 
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -65,10 +69,11 @@ header .adminbutton{
 	transition: all 0.3s ease;
 }
 
+header #logout{
+	right: 5em;
+}
+
 header .adminbutton a{
-	text-decoration: none;
-	color: white;
-	font-size: 0.9em;
 }
 
 header .adminbutton:hover{
@@ -76,9 +81,7 @@ header .adminbutton:hover{
 	
 }
 
-header #logout{
-	right: 5em;
-}
+
 
 .logo{
 	height: 50px;
@@ -146,8 +149,14 @@ nav li:hover{
 	transition: all 0.4s ease;
 }
 
-nav li:hover .dropdown:first-child{
+nav li:hover .topLine{
 	border-top: 2px solid white;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 nav li:hover .dropdown {
@@ -197,7 +206,7 @@ nav li ul li:hover:after{
 	right: 5px;
 }
 
-nav li ul li a{
+nav ul li ul a{
 	text-decoration: none;
 	color: white;
 }
@@ -246,14 +255,16 @@ label{
 
 .background{
 	width: 100%;
-	height: 1048px;
+	height: 100%;
 	background-color: black;
 }
 
 .HomeLogo{
-	width: 35%;
-	margin-top:5em; 
-	margin-left: 32%;
+	width: 500px;
+	margin-top:10em; 
+	margin-left: -250px;
+	position: absolute;
+	left: 50%;
 
 
 }

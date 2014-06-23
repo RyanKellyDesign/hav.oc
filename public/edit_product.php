@@ -32,12 +32,10 @@ if($_POST){
 				echo '<p class="error">'.$file['error_message'].'</p>';
 			}else if($file['filepath']) {
 				$product->image = $file['filepath'];	
-		}
+			}
 			
+		}
 	}
-}
-
-	$product->category_id = $_GET['category_id'];
 	$product->save();
 }
 

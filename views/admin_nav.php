@@ -16,12 +16,12 @@
 					<a class="noDecor navHead" href="edit_category.php?id=<?=$nav_category['id']?>"><?=$nav_category['name']?></a>
 					
 					<?php $products = new Product_collection($nav_category['id']); ?>
-					<ul>
+					<ul class="topLine">
 						<?php foreach($products->items as $nav_product): ?>
-							<li class="dropdown"><a href="edit_product.php?id=<?=$nav_product['id']?>"><?=$nav_product['name']?></a></li>
+							<a href="edit_product.php?id=<?=$nav_product['id']?>"><li class="dropdown"><?=$nav_product['name']?></li></a>
 						<?php endforeach; ?>
 
-						<li class="dropdown"><a href="create_product.php?category_id=<?=$nav_category['id']?>" class="bold">New product</a></li>
+						<a href="create_product.php?category_id=<?=$nav_category['id']?>" class="bold"><li class="dropdown">New product</li></a>
 					</ul>
 				</li>
 			<?php endforeach; ?>

@@ -11,12 +11,14 @@ Login::kickout();
 
 $form = new Form();
 $title = 'Edit Category';
-$category = new Model($_GET['id']);
+$category = new Model("tb_categories");
+$category->load($_GET['id']);
 
 if($_POST){
 	$category->name = $_POST['name'];
 	$category->save();
 }
+
 
 include '../views/admin_header.php';
 include '../views/admin_nav.php';

@@ -6,6 +6,7 @@ require_once '../libraries/form.class.php';
 require_once '../libraries/login.class.php';
 require_once '../libraries/model.lib.php';
 require_once '../models/user.model.php';
+require_once '../models/admin.model.php';
 
 require_once '../models/product.collection.php';
 require_once '../models/category.collection.php';
@@ -18,10 +19,20 @@ if($_POST){
 
 	if($user->authenticate()){
 		Login::log_in();
+		$_SESSION['admin'] = 1;
 		header('location:admin.php');
 		exit;
-	}else{
-		$error = 'Invalid email or password';
+	}
+	else{
+		$user = new User();
+		$user->username = $_POST['username'];
+		$user->password = $_POST['password'];
+
+		if($user->authenticate()){
+			Login::log_in();
+			header('location:index.php');
+			exit;
+		}
 	}
 }
 

@@ -162,7 +162,7 @@ class Model{
 	*/
 
 	public function soft_delete(){
-		$this->fields['deleted'] = 1;
+		$this->data['deleted'] = 1;
 		return $this->save();
 	}
 

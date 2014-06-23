@@ -8,9 +8,9 @@
 					<a class="noDecor navHead" href="category.php?id=<?=$nav_category['id']?>"><?=$nav_category['name']?></a>
 					
 					<?php $products = new Product_collection($nav_category['id']); ?>
-					<ul>
+					<ul class="topLine">
 						<?php foreach($products->items as $nav_product): ?>
-							<li class="dropdown"><a href="<?=$nav_category['name']?>.php?category_id=<?=$nav_category['id']?>&id=<?=$nav_product['id']?>"><?=$nav_product['name']?></a></li>
+							<a href="product.php?id=<?=$nav_product['id']?>"><li class="dropdown"><?=$nav_product['name']?></li></a>
 						<?php endforeach; ?>
 
 					</ul>

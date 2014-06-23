@@ -7,7 +7,8 @@ require_once '../libraries/login.class.php';
 Login::kickout();
 
 if($_GET['id']){
-	$category = new Model($_GET['id']);
+	$category = new Model('tb_categories');
+	$category->load($_GET['id']);
 	$category->delete();
 }
 
