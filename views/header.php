@@ -23,6 +23,7 @@
 					}
 					else {
 						echo '<a href="login.php"><div class="adminbutton">Log In</div></a>';
+						echo '<a href="login.php"><div class="adminbutton">Log In</div></a>';
 					}
 			?>
 

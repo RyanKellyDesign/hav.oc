@@ -39,28 +39,4 @@ class User extends Model {
 		}
 	}
 
-	public function save(){
-		#if this id is 0, no page has been loaded
-		if($this->id == 0){
-			$success = $this->db
-				->set(array(
-					'username'		=> $this->username,
-					'password'	=> Hash::make_password($this->password),
-					'salt'		=> Hash::salt()
-				))
-				->insert($this->table);
-		}else{
-			$success = $this->db
-				->set(array(
-					'username'		=> $this->username,
-					'password'	=> Hash::make_password($this->password),
-					'salt'		=> Hash::salt()
-				))
-				->where('id',$this->id)
-				->update($this->table);
-		}
-
-		return $success;
-	}
-
 }

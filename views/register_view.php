@@ -1,5 +1,5 @@
 <div class="main">
-	<h2>Login</h2>
+	<h2>Register</h2>
 	
 	<?=Form::open()?>
 
@@ -15,16 +15,7 @@
 
 		<div class="row">
 			<?=Form::submit()?>
-			<a href='register.php'>Register</a>
 		</div>
-
-		<?php 
-			if($error): ?>
-
-			<p class="error"><?=$error?></p>
-
-
-		 <? endif; ?>
 
 	<?=Form::close()?>
 </div>
