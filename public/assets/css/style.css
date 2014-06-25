@@ -46,6 +46,7 @@ header .container{
 	position: relative;
 	height: 150px;
 	line-height: 100px;
+	background-image: url();
 }
 
 header .adminbutton{
@@ -70,7 +71,7 @@ header .adminbutton{
 }
 
 header #logout{
-	right: 5em;
+	right: 85px;
 }
 
 header .adminbutton a{
@@ -83,7 +84,9 @@ header .adminbutton:hover{
 	
 }
 
-
+#cart{
+	margin-left: 10px;
+}
 
 .logo{
 	height: 50px;
@@ -366,4 +369,16 @@ label{
 
 
 
+}
+
+.adminHomeContainer{
+	width: 960px;
+	margin: 0 auto;
+	background: #bbb;
+	color: #333;
+	padding: 50px;
+	height: 100%;
+}
+.adminHomeContainer h2{
+	padding-top: 20px;
 }

@@ -11,7 +11,7 @@
 		<a href="index.php"><img class="logo" src="../public/assets/img/fullTextLogo.png" alt="logo"></a>
 			<?php 	if(Login::is_logged_in() && $_SESSION['admin'] != 1) {
 						echo '<div class="adminbutton" id="cart">	
-								<a href="cart.php">Cart</a>
+								<a href="cart.php">Cart ('.Cart::get_total().')</a>
 							</div>
 							<div class="adminbutton" id="logout">	
 								<a href="logout.php">Log Out</a>
