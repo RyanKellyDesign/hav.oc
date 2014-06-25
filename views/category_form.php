@@ -9,7 +9,7 @@
 		</div>
 
 		<div class="row">
-			<?=$form->submit()?>
+			<?=$form->submit('Done')?>
 				<?php
 					if($_GET['id']){
 						echo "<a class='blackRoundedButton' href='delete_category.php?id=".$_GET['id']."'>Delete</a>";

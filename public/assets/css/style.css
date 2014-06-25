@@ -497,3 +497,24 @@ label{
 .logfrm input[type="submit"]{
 	color: white;
 }
+
+.productContainer{
+	height: 100%;
+	position: relative;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	border-bottom: solid 1px #aaa;
+}
+
+.productInfoinCat{
+	position: absolute;
+	top: -20px;
+	left: 395px;
+}
+
+.productContainer img{
+	width: 350px;
+}
+.productNameinCat{
+	font-size: 20px;
+}
