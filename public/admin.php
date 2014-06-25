@@ -4,6 +4,7 @@ require_once '../libraries/database.lib.php';
 require_once '../models/category.collection.php';
 require_once '../models/product.collection.php';
 require_once '../libraries/login.class.php';
+require_once '../libraries/cart.lib.php';
 
 Login::kickout();
 

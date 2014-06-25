@@ -7,6 +7,7 @@ require_once '../models/product.collection.php';
 require_once '../libraries/login.class.php';
 require_once '../libraries/model.lib.php';
 require_once '../libraries/collection.lib.php';
+require_once '../libraries/cart.lib.php';
 
 $currentProduct = new Model('tb_products');
 $currentProduct->load($_GET['id']);

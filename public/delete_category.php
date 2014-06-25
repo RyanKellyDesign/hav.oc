@@ -3,6 +3,7 @@
 require_once '../libraries/database.lib.php';
 require_once '../libraries/model.lib.php';
 require_once '../libraries/login.class.php';
+require_once '../libraries/cart.lib.php';
 
 Login::kickout();
 
