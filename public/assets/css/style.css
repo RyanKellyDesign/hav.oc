@@ -374,7 +374,6 @@ label{
 	width: 960px;
 	padding: 2em;
 	margin-top: 2em;
-	color: red;
 	float: left;
 	background-color: #333;
 }
@@ -383,6 +382,7 @@ label{
 	font-family: Arial;
 	font-size: 30px;
 	color: white;
+	margin-top: 1em;
 }
 
 .price{
@@ -394,8 +394,10 @@ label{
 .productDesc{
 	margin-top: 1em;
 	font-family: helvetica;
-	font-size: 12px;
+	font-size: 14px;
 	color: white;
+	width: 370px;
+	float: right;
 }
 
 .buyOpts{
@@ -408,6 +410,11 @@ label{
 
 #quantity{
 	color: black;
+}
+
+#totalPrice{
+	margin-top: 1em;
+	font-size: 20px;
 }
 
 
@@ -433,12 +440,24 @@ label{
 		overflow: hidden;
 	}
 
+}
 
-
-
-
+.logfrm{
+	text-align: center;
+	padding: 320px;
+	color: white;
+	background-image: url(../img/circle.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1000px;
+	text-decoration: none;
 
 }
+
+
+
+
+
 
 
 .products,
@@ -446,7 +465,14 @@ label{
 .main{
 	margin-top: 179px;
 }
+<<<<<<< HEAD
 
 .homebody{
 	overflow: hidden;
 }
+=======
+.adminHomeContainer h2{
+	padding-top: 20px;
+}
+
+>>>>>>> 8c5c426550a976b71452ea419eb8b152a74f12e9
