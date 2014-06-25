@@ -412,12 +412,24 @@ label{
 		display: inline-block;
 	}
 
+}
 
-
-
-
+.logfrm{
+	text-align: center;
+	padding: 320px;
+	color: white;
+	background-image: url(../img/circle.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1000px;
+	text-decoration: none;
 
 }
+
+
+
+
+
 
 .adminHomeContainer{
 	width: 960px;
@@ -430,3 +442,4 @@ label{
 .adminHomeContainer h2{
 	padding-top: 20px;
 }
+
