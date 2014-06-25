@@ -1,30 +1,32 @@
 <div class="main">
-	<h2>Login</h2>
-	
-	<?=Form::open()?>
+	<div class="logfrm">
+		<h2>Login</h2>
+		
+		<?=Form::open()?>
 
-		<div class="row">
-			<?=Form::label('username','Username:')?>
-			<?=Form::input('text','username')?>
-		</div>
+			<div class="row">
+				<?=Form::label('username','Username:')?>
+				<?=Form::input('text','username')?>
+			</div>
 
-		<div class="row">
-			<?=Form::label('password','Password:')?>
-			<?=Form::input('password', 'password')?>
-		</div>
+			<div class="row">
+				<?=Form::label('password','Password:')?>
+				<?=Form::input('password', 'password')?>
+			</div>
 
-		<div class="row">
-			<?=Form::submit()?>
-			<a href='register.php'>Register</a>
-		</div>
+			<div class="row">
+				<?=Form::submit()?>
+				<a href='register.php'>Register</a>
+			</div>
 
-		<?php 
-			if($error): ?>
+			<?php 
+				if($error): ?>
 
-			<p class="error"><?=$error?></p>
+				<p class="error"><?=$error?></p>
 
 
-		 <? endif; ?>
+			 <? endif; ?>
 
-	<?=Form::close()?>
+		<?=Form::close()?>
+	</div>
 </div>
