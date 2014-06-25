@@ -469,6 +469,8 @@ label{
 .loginformBody{
 	margin-top: 0;
 	padding-top: 155px;
+	height: 100%;
+	overflow: hidden;
 }
 
 
