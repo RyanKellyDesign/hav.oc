@@ -4,7 +4,7 @@
 		<div class='catagoryTitle'>
 			<?=$product['name']?>
 		</div>
-		<div class='productDesc'>
+		<div class='CatagoryDesc'>
 			<?=$product['description']?>
 		</div>
 	</div>

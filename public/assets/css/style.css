@@ -361,7 +361,6 @@ label{
 	width: 960px;
 	padding: 2em;
 	margin-top: 2em;
-	color: red;
 	float: left;
 	background-color: #333;
 }
@@ -370,6 +369,7 @@ label{
 	font-family: Arial;
 	font-size: 30px;
 	color: white;
+	margin-top: 1em;
 }
 
 .price{
@@ -381,8 +381,10 @@ label{
 .productDesc{
 	margin-top: 1em;
 	font-family: helvetica;
-	font-size: 12px;
+	font-size: 14px;
 	color: white;
+	width: 370px;
+	float: right;
 }
 
 .buyOpts{
@@ -395,6 +397,11 @@ label{
 
 #quantity{
 	color: black;
+}
+
+#totalPrice{
+	margin-top: 1em;
+	font-size: 20px;
 }
 
 
