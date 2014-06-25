@@ -1,7 +1,7 @@
 <?php foreach ($currentCategory->items as $product): ?>
 	<div class='productContainer'>
 		<img src="<?=$product['image']?>">
-		<div class='productTitle'>
+		<div class='catagoryTitle'>
 			<?=$product['name']?>
 		</div>
 		<div class='productDesc'>

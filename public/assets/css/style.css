@@ -352,6 +352,47 @@ label{
 
 }
 
+.product{
+	width: 960px;
+	padding: 2em;
+	margin-top: 2em;
+	color: red;
+	float: left;
+	background-color: #333;
+}
+
+.productTitle{
+	font-family: Arial;
+	font-size: 30px;
+	color: white;
+}
+
+.price{
+	font-family: Arial;
+	font-size: 10px;
+	color: white;
+}
+
+.productDesc{
+	margin-top: 1em;
+	font-family: helvetica;
+	font-size: 12px;
+	color: white;
+}
+
+.buyOpts{
+	font-family: Arial;
+	font-size: 20px;
+	color: white;
+
+}
+
+
+#quantity{
+	color: black;
+}
+
+
 @media all and (max-width: 960px) {
 	
 
