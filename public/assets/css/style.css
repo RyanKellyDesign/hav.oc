@@ -74,6 +74,8 @@ header #logout{
 }
 
 header .adminbutton a{
+	color: inherit;
+	text-decoration: none;
 }
 
 header .adminbutton:hover{

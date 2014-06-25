@@ -15,7 +15,8 @@
 
 		<div class="row">
 			<?=Form::submit()?>
+			<a class="blackRoundedButton" href='login.php'>Log in</a>
 		</div>
 
 	<?=Form::close()?>
-</div>
+</div> 
