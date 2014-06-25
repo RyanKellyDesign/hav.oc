@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header>
-		<img class="logo" src="../public/assets/img/fullTextLogo.png" alt="logo">
+		<a href="index.php"><img class="logo" src="../public/assets/img/fullTextLogo.png" alt="logo"></a>
 		<div class="buttons">
 			<div class="adminbutton"><a href="index.php">Public</a></div>
 				
