@@ -115,6 +115,7 @@ nav {
 	background: #333;
 	border-bottom: 2px solid white;
 	border-top: 2px solid white;
+	box-shadow: 0px -5px 5px 5px black;
 }
 
 nav ul{
@@ -251,6 +252,10 @@ label{
 	margin-right: 10px;
 }
 
+label[for="quantity"]{
+	font-size: 20px;
+}
+
 .error{
 	display: inline-block;
 	height: 30px;
@@ -373,40 +378,42 @@ label{
 .product{
 	width: 960px;
 	padding: 2em;
-	margin-top: 2em;
-	float: left;
 	background-color: #333;
 }
 
 .productTitle{
 	font-family: Arial;
-	font-size: 30px;
-	color: white;
+	font-size: 25px;
+	color: #333;
 	margin-top: 1em;
 }
 
-.price{
-	font-family: Arial;
-	font-size: 10px;
-	color: white;
-}
 
 .productDesc{
-	margin-top: 1em;
 	font-family: helvetica;
 	font-size: 14px;
-	color: white;
+	color: #333;
 	width: 370px;
-	float: right;
+	position: absolute;
+	top: 280px;
+	left: 515px;
+}
+.productTitle{
+	position: absolute;
+	left: 515px;
+	top: 202px;
 }
 
 .buyOpts{
 	font-family: Arial;
-	font-size: 20px;
-	color: white;
-
+	color: #333;
+	text-align: right;
+	padding-right: 50px;
 }
 
+.buyOpts #quantity, .buyOpts label#quantity{
+	font-size: 20px;
+}
 
 #quantity{
 	color: black;
@@ -418,17 +425,17 @@ label{
 }
 
 
-.adminHomeContainer{
+.fullHeightContainer{
 	width: 960px;
 	margin: 0 auto;
-	background: #bbb;
+	background: #ddd;
 	color: #333;
 	padding: 50px;
 	min-height: 100%;
 	position: relative;
 	z-index: 1;
 }
-.adminHomeContainer h2{
+.fullHeightContainer h2{
 	padding-top: 20px;
 }
 
@@ -451,28 +458,42 @@ label{
 	background-position: center;
 	background-size: 1000px;
 	text-decoration: none;
-
+	overflow: hidden;
 }
 
 
+.logfrm input{
+	color: black;
+}
 
-
-
+.loginformBody{
+	margin-top: 0;
+	padding-top: 155px;
+}
 
 
 .products,
-.product,
-.main{
-	margin-top: 179px;
+.product{
+	padding-top: 230px;
 }
-<<<<<<< HEAD
+
+.main{
+	padding-top: 179px;
+	margin-top: -18px;
+}
 
 .homebody{
 	overflow: hidden;
 }
-=======
 .adminHomeContainer h2{
 	padding-top: 20px;
 }
 
->>>>>>> 8c5c426550a976b71452ea419eb8b152a74f12e9
+
+#admincart{
+	margin-right: 150px;
+}
+
+.logfrm input[type="submit"]{
+	color: white;
+}

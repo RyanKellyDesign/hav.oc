@@ -20,6 +20,7 @@
 					else if (Login::is_logged_in() && $_SESSION['admin'] == 1) {
 						echo '<a href="admin.php" class="adminbutton"><div>Admin</div></a>';
 						echo '<a href="logout.php" class="adminbutton" id="logout"><div>Log Out</div></a>';
+						echo '<a href="cart.php" class="adminbutton" id="admincart"><div>Cart ('.Cart::get_total().')</div></a>';
 					}
 					else {
 						echo '<a href="login.php"><div class="adminbutton">Log In</div></a>';

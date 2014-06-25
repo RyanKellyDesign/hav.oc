@@ -1,4 +1,4 @@
-<div class="main adminHomeContainer">
+<div class="main fullHeightContainer">
 	
 	<h2>Admin</h2>
 	

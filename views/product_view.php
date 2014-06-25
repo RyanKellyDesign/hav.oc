@@ -9,30 +9,30 @@
 	}
 </script>
 
-<div class='product'>
+<div class='product fullHeightContainer'>
 	<img src="<?=$currentProduct->image?>">
-	<div class='productTitle'>
-		<?=$currentProduct->name?>
-	</div>
-	<div class='productDesc'>
-		<?=$currentProduct->description?>
-	</div>
-	<div class='price'>
-		$<?=$currentProduct->price?>
-	</div>
-	<div class='buyOpts'>
-		<?=Form::open('../public/add_to_cart.php')?>
-			<?=Form::hidden('id', $_GET['id']);?>
-			<div class="row">
-				<?=Form::label('quantity', 'Quantity:')?>
-				<?=Form::number('quantity', 0)?>
-			</div>
-			<div id="totalPrice"></div>
+	<div class="prodInfo">
+		<div class='productTitle'>
+			<?=$currentProduct->name?> - 
+			$<?=$currentProduct->price?> each
+		</div>
+		<div class='productDesc'>
+			<?=$currentProduct->description?>
+		</div>
+		<div class='buyOpts'>
+			<?=Form::open('../public/add_to_cart.php')?>
+				<?=Form::hidden('id', $_GET['id']);?>
+				<div class="row">
+					<?=Form::label('quantity', 'Quantity:')?>
+					<?=Form::number('quantity', 0)?>
+				</div>
+				<div id="totalPrice"></div>
 
-			<div class="row">
-				<?=Form::submit()?>
-			</div>
+				<div class="row">
+					<?=Form::submit('Add to Cart')?>
+				</div>
 
-		<?=Form::close()?>
+			<?=Form::close()?>
+		</div>
 	</div>
 </div>
