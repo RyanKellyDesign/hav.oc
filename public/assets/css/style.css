@@ -409,6 +409,9 @@ label{
 	color: #333;
 	text-align: right;
 	padding-right: 50px;
+	position: absolute;
+	top: 500px;
+	left: 575px;
 }
 
 .buyOpts #quantity, .buyOpts label#quantity{
@@ -519,4 +522,62 @@ label{
 }
 .productNameinCat{
 	font-size: 20px;
+}
+
+.cartContainer{
+	padding-top: 230px;
+
+
+}
+
+.cartContainer h2{
+	padding-top: 0;
+}
+
+.cartContainer img{
+	width: 250px;
+}
+
+.cartImage{
+	height: 150px;
+	width: 250px;
+	overflow: hidden;
+}
+
+.withShadow{
+	box-shadow: inset 0px 0px 50px 50px black;
+}
+
+.cartProducts{
+	border-top:  solid transparent 30px;
+	border-bottom: solid transparent 30px;}
+
+.darkColumn{
+	background: #ccc;
+}
+
+.lightColumn{
+	background: #eee;
+}
+
+td{
+
+	padding: 20px 15px;
+
+}
+
+.tableHeads{
+	border-bottom: 10px solid #333;
+	padding-bottom: 20px;
+	border-collapse: separate;
+}
+
+.grey{
+	background: #333;
+	height: 1px;
+	padding: 0;
+}
+
+table{
+	border-collapse: separate;
 }

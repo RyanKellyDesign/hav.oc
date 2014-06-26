@@ -1,4 +1,4 @@
-<div class="main">
+<div class="fullHeightContainer cartContainer">
 	<h2><?=$title?></h2>
 
 	<?=$form->open()?>

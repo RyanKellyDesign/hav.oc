@@ -1,5 +1,5 @@
 <?php $categories = new Category_collection(); ?>
-// <script>
+<script>
 // 	window.onload = function () {
 // 		var count = <?=count($categories->items) + 1?>;
 // 		var navThings = document.getElementsByClassName('dropdown')[0];

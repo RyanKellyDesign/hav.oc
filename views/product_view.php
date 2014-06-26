@@ -24,7 +24,7 @@
 				<?=Form::hidden('id', $_GET['id']);?>
 				<div class="row">
 					<?=Form::label('quantity', 'Quantity:')?>
-					<?=Form::number('quantity', 0)?>
+					<?=Form::number('quantity', 1)?>
 				</div>
 				<div id="totalPrice"></div>
 

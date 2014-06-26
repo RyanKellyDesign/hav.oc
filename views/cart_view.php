@@ -1,23 +1,26 @@
-<div class="main">
+<div class="cartContainer fullHeightContainer">
 	
 	<table>
+		<tr class="tableHeads">
+			<th class="lightColumn" width="250px">Image</th>
+			<th class="darkColumn" width="130px">Name</th>
+			<th class="lightColumn" width="100px">Price</th>
+			<th class="darkColumn" width="170px">Quantity</th>
+			<th class="lightColumn" width="100px">Total Price</th>
+			<th class="darkColumn" width="100px">Remove Item</th>
+		</tr>
 		<tr>
-			<th>Image</th>
-			<th width="550">Name</th>
-			<th width="80">Price</th>
-			<th width="130">Quantity</th>
-			<th width="120">Total Price</th>
-			<th></th>
+			<td class="grey" colspan="6"></td>
 		</tr>
 
 		<?php if(count($cart_products)): ?>
 		<?php foreach($cart_products as $product): ?>
 
-		<tr>
-			<td><img src="<?=$product['image']?>"></td>
-			<td><?=$product['name']?></td>
-			<td>$<?=$product['price']?></td>
-			<td>
+		<tr class="cartProducts">
+			<td class="lightColumn"><div class="cartImage" ><img class="withShadow" src="<?=$product['image']?>"></div></td>
+			<td class="darkColumn"><?=$product['name']?></td>
+			<td class="lightColumn">$<?=$product['price']?></td>
+			<td class="darkColumn">
 				
 				<?=Form::open('update_quantity.php')?>
 					<?=Form::hidden('id', $product['id'])?>
@@ -25,13 +28,16 @@
 					<?=Form::submit('Save')?>
 				<?=Form::close()?>				
 			</td>
-			<td>$<?=$product['total_price']?></td>
-			<td><a href="remove_from_cart.php?id=<?=$product['id']?>">Remove</a></td>
+			<td class="lightColumn">$<?=$product['total_price']?></td>
+			<td class="darkColumn"><a href="remove_from_cart.php?id=<?=$product['id']?>">Remove</a></td>
+		</tr>
+		<tr>
+			<td class="grey" colspan="6"></td>
 		</tr>
 
 		<?php endforeach; ?>
 	<?php else: ?>
-		<td colspan="6">There are nothing in the cart</td>
+		<td colspan="6">There's nothing in the cart</td>
 	<?php endif; ?>
 	</table>
 

@@ -8,6 +8,7 @@ require_once '../libraries/login.class.php';
 require_once '../libraries/model.lib.php';
 require_once '../libraries/collection.lib.php';
 require_once '../libraries/cart.lib.php';
+require_once '../libraries/image.lib.php';
 
 $cart_products = array();
 
@@ -21,6 +22,11 @@ foreach($_SESSION['cart'] as $id => $qty){
 
 	$grand_total += $total_price;
 
+	$img = new Image($product->image);
+
+	$img->resize(300,200);
+	//$img->output('assets/thumbs/');
+
 	$cart_products[] = array(
 		'image'         => $product->image,
 		'total_price'   => $total_price,
@@ -33,5 +39,6 @@ foreach($_SESSION['cart'] as $id => $qty){
 }
 
 include '../views/header.php';
+include '../views/nav.php';
 include '../views/cart_view.php';
 include '../views/footer.php';

@@ -19,7 +19,9 @@ if ($_POST) {
 	$user->salt     = Hash::salt();
 	$user->save();
 
-	
+	Login::log_in();
+	header('location:index.php');
+	exit;	
 }
 
 include '../views/header.php';
