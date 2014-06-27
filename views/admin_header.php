@@ -1,7 +1,3 @@
-<?php 	if($_SESSION['admin'] != 1) {
-	header('location:login.php');
-} ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,20 +9,14 @@
 <body>
 	<header>
 		<a href="index.php"><img class="logo" src="../public/assets/img/fullTextLogo.png" alt="logo"></a>
-		<div class="buttons">
-			<div class="adminbutton"><a href="index.php">Public</a></div>
-				
-				<?php 	if(Login::is_logged_in() && $_SESSION['admin'] != 1) {
-						header('location:login.php');
-					}
-					else if (Login::is_logged_in() && $_SESSION['admin'] == 1) {
+		<a href="cart.php" class="cartbutton" id="admincart"><div>Cart (<?=Cart::get_total()?>)</div></a>
+			<?php if (Login::is_logged_in() && Login::is_admin()) {
 						echo '<a href="index.php" class="adminbutton"><div>Public</div></a>';
-						echo '<a href="logout.php" class="adminbutton" id="logout"><div>Log Out</div></a>';
-					}
-					else {
-						echo '<a href="login.php"><div class="adminbutton">Log In</div></a>';
+						echo '<a href="logout.php" class="adminbutton" id="Adminlogout"><div>Log Out</div></a>';
 					}
 			?>
-				
-		</div>
+
+			
+
+		
 	</header>

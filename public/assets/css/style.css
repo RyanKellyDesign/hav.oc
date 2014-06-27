@@ -59,7 +59,7 @@ header .container{
 header .adminbutton{
 	position: absolute;
 	bottom: 80px;
-	right: 1em;
+	right: 10px;
 	background: #333;
 	height: 30px;
 	line-height: 20px;
@@ -78,7 +78,11 @@ header .adminbutton{
 }
 
 header #logout{
-	right: 85px;
+	right: 10px;
+}
+
+header #Adminlogout{
+	right: 75px;
 }
 
 header .adminbutton a{
@@ -91,8 +95,35 @@ header .adminbutton:hover{
 	
 }
 
-#cart{
-	margin-left: 10px;
+header .cartbutton{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background: #333;
+	height: 30px;
+	line-height: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	font-size: 0.9em;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+header .cartbutton a{
+	color: inherit;
+	text-decoration: none;
+}
+
+header .cartbutton:hover{
+	background: #555;
+	
 }
 
 .logo{
@@ -494,11 +525,6 @@ label{
 	padding-top: 20px;
 }
 
-
-#admincart{
-	margin-right: 150px;
-}
-
 .logfrm input[type="submit"]{
 	color: white;
 }
@@ -542,6 +568,7 @@ label{
 	height: 150px;
 	width: 250px;
 	overflow: hidden;
+	position: relative;
 }
 
 .withShadow{
@@ -580,4 +607,14 @@ td{
 
 table{
 	border-collapse: separate;
+}
+
+.cartImage:after{
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	width: 250px;
+	height: 150px;
+	box-shadow: inset 0px 0px 6px 1px #333;
 }

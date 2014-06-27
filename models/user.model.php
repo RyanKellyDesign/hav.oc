@@ -32,7 +32,7 @@ class User extends Model {
 					->get_one();
 
 		if ($result['id']) {
-			$this->id 		= $result['id'];
+			$this->id = $result['id'];
 			return true;
 		}else{
 			return false;

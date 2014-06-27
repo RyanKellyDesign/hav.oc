@@ -19,8 +19,7 @@ if($_POST){
 	$user->password = $_POST['password'];
 
 	if($user->authenticate()){
-		Login::log_in();
-		$_SESSION['admin'] = 1;
+		Login::log_in_admin($user->id);
 		header('location:admin.php');
 		exit;
 	}

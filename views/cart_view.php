@@ -17,7 +17,7 @@
 		<?php foreach($cart_products as $product): ?>
 
 		<tr class="cartProducts">
-			<td class="lightColumn"><div class="cartImage" ><img class="withShadow" src="<?=$product['image']?>"></div></td>
+			<td class="lightColumn"><div class="cartImage" ><img src="<?=$product['image']?>"></div></td>
 			<td class="darkColumn"><?=$product['name']?></td>
 			<td class="lightColumn">$<?=$product['price']?></td>
 			<td class="darkColumn">
@@ -42,5 +42,6 @@
 	</table>
 
 	<p class="total">Grand Total: $<?=$grand_total?></p>
+	<a href="clear_cart.php" class="clearCart"><p class=" blackRoundedButton">Clear Cart</p></a>
 
 </div>
